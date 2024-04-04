@@ -15,8 +15,18 @@ export default function Home() {
         <Button name="Fernandita">Hola Fernandita</Button>
         <Button name="Luisito">Hola Luisito</Button>
         <Button name="Pepito">Hola Pepito</Button>
+        <Button>Hola no tengo nombre</Button>
       </div>
-
+      <br />
+      <div className="flex flex-col justify-start items-start">
+        {
+          names.map((name, index) => (
+            <Button key={index} name={name}>
+              Hola {name}
+            </Button>
+          ))
+        }
+      </div>
     </main>
   );
 }
