@@ -13,4 +13,4 @@ export default function CatCard({ id, src }: Props) {
       <Link href={`/${id}`}>Ir a perfil</Link>
     </div>
   )
-}
+} 
